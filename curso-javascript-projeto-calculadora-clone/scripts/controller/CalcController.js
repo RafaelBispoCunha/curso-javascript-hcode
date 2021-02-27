@@ -10,9 +10,15 @@ class CalcController {
     }
 
     initialize(){
+        this.setDisplayTime();
+
         setInterval(() =>{
             this.setDisplayTime();
         }, 1000)
+    }
+
+    initButtonEvents(){
+        document.querySelectorAll("#button > g, #parts > g");
     }
 
     setDisplayTime(){
